@@ -1,0 +1,13 @@
+@font-face{
+    font-family: "Caramelo";
+    src: url("fuentes/Caramel-Regular.ttf");
+  }
+body {
+    font-family: Caramelo;
+  }
+
+.titulo {
+    background-color: brown;
+    text-align: center;
+    float: center;
+}
