@@ -1,54 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2º DAW</title>
     <link rel="stylesheet" href="style.css">
-    <title>Mi clase
-    </title>
+    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png">
 </head>
 <body>
     <header>
-        <img src="imagenes/logo.png" alt="">
-        <h1>Mi aula</h1>
+        <a href="#"><img src="imagenes/logo.png" alt="Icono IES Tetuan"/></a>
+        <h1>2º DAW</h1>
     </header>
-
-    <nav class="navegador">
-        <ul>
-          <li><a href="#">Mi Clase</a></li>
-          <li><a href="#">Modulos</a></li>
-          <li><a href="#">Profesores</a></li>
-        </ul>
+    <nav>
+        <a href="#clase">Mi clase</a> &nbsp &nbsp<a href="#clase">Módulos</a> &nbsp &nbsp<a href="#profe">Profesores</a>
     </nav>
-    <div id="contenedor">
-        <img src="imagenes/clase.jpg" alt="" width=50% height=50%>
+    <main>
+        <section>
+            <img src="./imagenes/clase.jpg" alt="Foto Aula"/>
+        </section>
         <aside>
-            <ol>
-                <li>Desarrollo web en entorno cliente.</li>
-                <li>Desarollo web en entorno servidor.</li>
-                <li>Despliegue de aplicaciones web</li>
+            <ol id="clase">
                 <li>Diseño de interfaces web</li>
-                <li>Empresa e iniciativa emprendedora</li>
-                <li>Ingles</li>
-            </ol>
-            <ul>
-                <li>Maria Carmen Armijo</li>
-                <li>Marta Bayona</li>
-                <li>Miguel Angel Cruzado</li>
-                <li>Rosa Ana Guerra</li>
-                <li>Jose ALberto Lopez</li>
-                <li>Jose Emilio Vera</li>
+                <li>Inglés Técnico para grado</li>
+                <li>Desarrollo web en entorno</li>
+                <li>Empresa e iniciativa empresa</li>
+                <li>Desarrollo web en entorno</li>
+                <li>Despliegue de aplicaciones</li>
+            </ol> 
+            <ul id="profe">
+                <li>Armijo Torres, María Carmen</li>
+                <li>Bayona Espín, Marta</li>
+                <li>Cruzado Vivas, Miguel Ángel</li>
+                <li>Guerra Hoyos, Rosa Ana</li>
+                <li>López Ballesteros, José Alberto</li>
+                <li>Vera Saura, José Emilio</li>
             </ul>
         </aside>
-      </div>
-    <div id="descripcion">
-        <h4>Descripcion de mi clase</h4>
-        <p>hay 3 ventanas y muchos poc</p>
-    </div>
-
+        <article id="clase">
+            <h2>Descripción clase</h2>
+            <p>
+                El aula está llena de mesas , con ordenadores en cada una de ellas hay aproximadamentet 15 ordenadores<br>
+            Hay varios enchufes para conectar portatiles<br>
+            La clase cuenta con cuatro ventanas dobles que dan al patio del recinto.
+            Además, debido al COVID-19, se han añadido medidas especiales de prevenvión (gel hidroalcohólico,
+            toallitas de limpieza...).
+            </p>
+            <p>
+                Contiene 30 metros cuadrados. Tres ventanas en la parte derecha. Catorce ordenadores con sus respestivos 
+                ratones y teclados. Además incluye un proyector y pizarra.
+            </p>
+        </article>
+    </main>
     <footer>
-        <p>Raúl Hernández - raul.hdez.schez.2001@gmail.com</p>
+        <p>Raúl Hernández | correo: raul.hdez.schez.2001@gmail.com</p>
+        
     </footer>
+
 </body>
+
 </html>
