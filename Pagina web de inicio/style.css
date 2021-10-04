@@ -1,51 +1,57 @@
-@font-face{
-    font-family: "NotoSans";
-    src: url("fuentes/NotoSans-Regular.ttf");
-  }
+@font-face {
+  font-family: "NotoSans";
+  src: url("fuentes/NotoSans-Regular.ttf");
+}
+
 body {
-    font-family: NotoSans;
-  }
+  font-family: NotoSans;
+}
 
 header {
-    background-color: lightskyblue;
+  background-color: lightskyblue;
 }
-h1 {
-    float: right;
-    padding-right: 37rem;
-}
-nav ul{
-    list-style-type: none;
-    text-align: center;
- }
-nav li{
-    display: inline;
-    text-align: center;
-    margin-right: 10px;
- }
- 
-footer{
-    text-align: center;
-    display: inline;
-}
-div#contenedor {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-  }
-   
-  div#contenedor img {
-    float: left;
-    width: 50%;
-  }
-   
-  div#contenedor aside {
-    float: left;
-    width: 25%;
-    margin-left: 5%;
-  }
 
-  #descripcion {
-      display: inherit;
-      padding-top: 375px;
-      padding-left: 40px;
-  }
+h1 {
+  float: right;
+  padding-right: 37rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav li {
+  display: inline;
+  text-align: center;
+  margin-right: 10px;
+}
+
+footer {
+  text-align: center;
+  display: inline;
+}
+
+div#contenedor {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+div#contenedor img {
+  float: left;
+  width: 50%;
+}
+
+div#contenedor aside {
+  float: left;
+  width: 25%;
+  margin-left: 5%;
+}
+
+#descripcion {
+  display: inherit;
+  padding-top: 375px;
+  padding-left: 40px;
+}
+/*# sourceMappingURL=style.css.map */
