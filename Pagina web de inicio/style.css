@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: "NotoSans";
   src: url("fuentes/NotoSans-Regular.ttf");
@@ -55,3 +56,73 @@ div#contenedor aside {
   padding-left: 40px;
 }
 /*# sourceMappingURL=style.css.map */
+=======
+body{
+    font-size: 62.5%;
+    background-color: #D9D9D9;
+}
+
+header img{
+    float: left;
+    height: 15em;
+    width: 15em;
+
+}
+
+a {
+    color: #D9D9D9;
+    text-decoration: none;
+  }
+header h1{
+    float: inline-end;
+    text-align: center;
+    font-family: 'Lobster';
+    font-size: 4rem;
+    color: #353535;
+}
+nav {
+    clear: both;
+    text-align: center;
+    padding: 3px;
+    background-color: #284B63;
+    color: white;
+    font-family: 'BebasNeue';
+    font-size: 2rem;
+}
+aside {
+    float: right;
+    font-family: 'RobotoMono';
+    font-size: 3rem;
+    padding-right: 2em;
+}
+article{
+    font-family: 'Lato';
+}
+article h2{
+    font-size: 2rem;
+}
+article p{
+    font-size: 1.2rem;
+}
+main img{
+    float: left;
+}
+h2 {
+    clear: both;
+}
+footer{
+    clear: both;
+    text-align: center;
+    background-color: #284B63;
+    color: #D9D9D9;
+    font-size: 3em;
+    padding-top: 1px;
+    padding-bottom:1px;
+}
+
+@font-face{
+    font-family: 'Lobster';
+    font-size: medium;
+    src: url(fuentes/Lobster-Regular.ttf);
+}
+>>>>>>> 6118e1e484d974a1c7ce34eb0fd9e3ae842a249c
