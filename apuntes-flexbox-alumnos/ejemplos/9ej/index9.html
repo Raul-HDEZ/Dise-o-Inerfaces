@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+  <title>Usando flexbox</title>
+  <link rel="stylesheet" href="miCss.css">
+</head>
+<body>
+<header id="mainbox">
+  <span id="title">Usando flex:  flex-grow, flex-shrink y flex-basis </span>
+</header>
+
+<h1>Flex-Grow</h1>
+<h5>A,B,C y F son flex-grow:1 . D y E son flex-grow:2 .</h5>
+<div id="contenedor">
+  <div class="caja" style="background-color:red;">A</div>
+  <div class="caja" style="background-color:lightblue;">B</div>
+  <div class="caja" style="background-color:yellow;">C</div>
+  <div class="caja1" style="background-color:brown;">D</div>
+  <div class="caja1" style="background-color:lightgreen;">E</div>
+  <div class="caja" style="background-color:brown;">F</div>
+</div>
+
+
+
+
+<h1>flex-shrink</h1>
+<p>El ancho del contenido es de 500px; el flex-basis de los flex items es 120px.</p>
+<p>A, B, C tiene flex-shrink:1. D y E tienen flex-shrink:2</p>
+<p>El ancho de D y E es menor al de los otros.</p>
+<div id="content">
+  <div class="box" style="background-color:red;">A</div>
+  <div class="box" style="background-color:lightblue;">B</div>
+  <div class="box" style="background-color:yellow;">C</div>
+  <div class="box1" style="background-color:brown;">D</div>
+  <div class="box1" style="background-color:lightgreen;">E</div>
+</div>
+
+</body>
+</html>
