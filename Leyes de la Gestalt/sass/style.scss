@@ -1,0 +1,220 @@
+/*COLORES*/
+
+    $negro: #0B090A;
+    $gris: #161A1D;
+    $rojo-oscuro: #660708;
+    $rojo-medio: #A4161A;
+    $rojo: #BA181B;
+    $rojo-claro: #E5383B;
+    $blanco-gris: #B1A7A6;
+    $blanco-medio: #D3D3D3;
+    $blanco-claro: #F5F3F4;
+    $blanco: #FFFFFF;
+  
+  @font-face{
+      font-family: 'Pacifico';
+      font-size: medium;
+      src: url(../fuentes/Pacifico-Regular.ttf);
+  }
+  
+  body {
+    background-color: $blanco-claro;
+  }
+  hr {
+    border: 2px solid $gris;
+    margin-top: 2em;
+  }
+  /* menu */
+  header h1 {
+      font-family: 'Pacifico';
+      text-align: center;
+      font-size: 50px;
+      background-color: $rojo-medio;
+      margin-top: -8px;
+      margin-left: -8px;
+      margin-right: -8px;
+      }
+  #menu ul {
+      list-style:none;
+      margin:0;
+      padding:0;
+  
+     }
+     
+     /* items del menu */
+     
+     #menu ul li {
+      background-color:$rojo;
+     }
+     
+     /* enlaces del menu */
+     
+     #menu ul a {
+      display:block;
+      text-decoration:none;
+      color: $blanco;
+      font-weight:400;
+      font-size:15px;
+      padding:10px;
+      font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+      text-transform:uppercase;
+      letter-spacing:1px;
+     }
+     
+     /* items del menu */
+     
+     #menu ul li {
+      position:relative;
+      float:left;
+      margin:0;
+      padding:0;
+     }
+     
+     /* efecto al pasar el ratón por los items del menu */
+     
+     #menu ul li:hover {
+      background : $rojo-oscuro;
+     }
+     /* menu desplegable */
+  
+  #menu ul ul {
+   display:none;
+   position:absolute;
+   top:100%;
+   left:0;
+   padding:0;
+  }
+  
+  /* items del menu desplegable */
+  
+  #menu ul ul li {
+   float:none;
+   width:150px
+  }
+  
+  /* enlaces de los items del menu desplegable */
+  
+  #menu ul ul a {
+   line-height:120%;
+   padding:10px 15px;
+  }
+  
+  /* items del menu desplegable al pasar el ratón */
+  
+  #menu ul li:hover > ul {
+   display:block;
+  }
+  
+  /*------------------------------------------------------------------------------------------*/
+  /* menu desplegable */
+  
+  #menu ul ul {
+   display:none;
+   position:absolute;
+   top:100%;
+   left:0;
+   padding:0;
+  }
+  
+  /* items del menu desplegable */
+  
+  #menu ul ul li {
+   float:none;
+   width:150px
+  }
+  
+  /* enlaces de los items del menu desplegable */
+  
+  #menu ul ul a {
+   line-height:120%;
+   padding:10px 15px;
+  }
+  
+  /* items del menu desplegable al pasar el ratón */
+  
+  #menu ul li:hover > ul {
+   display:block;
+  }
+  
+  /* Contenedores */
+  .contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-flex > div {
+  
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    width: 400px;
+    border: solid $gris;
+    margin-top: 2em;
+    line-height : 30px;
+  }
+  
+  .elemento {
+    margin: 2em;
+    padding: 16px;
+    background-color: $blanco-medio;
+  }
+  .link {
+    float: right;
+    padding-right: 10px;
+    color: $rojo-medio;
+   }
+  
+   /*LEYES*/
+  
+   .ley{
+     background-color: $blanco-medio;
+     border: solid $gris;
+     margin: 20px;
+   }
+  
+   .ley {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .ley > div {
+    padding: 10px;
+    width: 1200px;
+    float: left;
+  }
+  
+  .ley > div > p {
+    margin: 10px;
+    text-align: justify;
+    padding: 7px;
+    font-size: 27px;
+  }
+  
+  .ley > div > h3 {
+    font-size: 35px;
+    padding-left: 15px;
+  }
+  .ley > figure > img {
+   height: 80%;
+   display: flex;
+  }
+  
+  footer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: $rojo;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+  }
+  
+  footer > p {
+    text-align: right;
+    font-size: 20px;
+  }
+
+.contenedor-flex > div:nth-child(1){ background : #D3D3D3; }
+.contenedor-flex > div:nth-child(2){ background : #D3D3D6; }
+.contenedor-flex > div:nth-child(3){ background : #D3D3D9; }
+.contenedor-flex > div:nth-child(4){ background : #D3D3f2; }
+.contenedor-flex > div:nth-child(5){ background : #D3D3f5; }
+.contenedor-flex > div:nth-child(6){ background : #D3D3f8; }
+.contenedor-flex > div:nth-child(7){ background : #D3D3fa; }
