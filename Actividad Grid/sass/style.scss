@@ -1,9 +1,12 @@
+// Defino las variables de colores y demas
 $radio-borde: 4px;
 $gap: 5px;
 $negro: #000000;
 $azul: #14213d;
 $naranja: #F29602;
 $amarillo: #fca311;
+
+// Alinea todos los divs
 
 div {
   text-align: center;
@@ -12,14 +15,38 @@ div {
   vertical-align: middle;
   padding: 15px;
 }
+
 body {
   background-color: $negro;
 }
 .container{
-
+  display: grid;
+  grid-template-columns:  auto;
+  grid-template-rows:  auto;
+  grid-column-gap: $gap;
+  grid-row-gap: $gap;
+  grid-template-areas: 
+  "header "
+  "maincontainer"
+  "aside"
+  "footer";
+  
   .c-main{
     padding: 0;
   }
+}
+
+.c-main {
+display: grid;
+grid-template-columns:  1fr;
+grid-template-rows:  1fr 1fr 1fr;
+grid-area:  maincontainer; 
+grid-column-gap: $gap;
+grid-row-gap: $gap;
+grid-template-areas: 
+  "headermain"
+  "article1"
+  "article2";
 }
 
 .c-header {
@@ -125,30 +152,6 @@ body {
   
   @media (min-width: 320px) and (max-width: 767px) {
     
-    .container {
-      display: grid;
-      grid-template-columns:  auto;
-      grid-template-rows:  auto;
-      grid-column-gap: $gap;
-      grid-row-gap: $gap;
-      grid-template-areas: 
-      "header "
-      "maincontainer"
-      "aside"
-      "footer";
-  }
 
-  .c-main {
-    display: grid;
-    grid-template-columns:  1fr;
-    grid-template-rows:  1fr 1fr 1fr;
-    grid-area:  maincontainer; 
-    grid-column-gap: $gap;
-    grid-row-gap: $gap;
-    grid-template-areas: 
-      "headermain"
-      "article1"
-      "article2";
-  }
     
   }
