@@ -1,23 +1,22 @@
 // Defino las variables de colores y demas
 $radio-borde: 4px;
 $gap: 5px;
-$negro: #000000;
-$azul: #14213d;
-$naranja: #F29602;
-$amarillo: #fca311;
+$fondo: #000000;
+$cajas: #14213d;
+$titulos: #fca311;
 
 // Alinea todos los divs
 
 div {
   text-align: center;
   justify-content: center;
-  background-color: $negro; 
+  background-color: $fondo; 
   vertical-align: middle;
   padding: 15px;
 }
 
 body {
-  background-color: $negro;
+  background-color: $fondo;
 }
 .container{
   display: grid;
@@ -51,37 +50,37 @@ grid-template-areas:
 
 .c-header {
     grid-area:  header; 
-    background-color: $naranja;
+    background-color: $titulos;
     border-radius: $radio-borde;
  }
 
  .div-header-main {
      grid-area:  headermain;
-     background-color: $amarillo;
+     background-color: $titulos;
      border-radius: $radio-borde;
  }
  
  .div-article-1 {
     grid-area:  article1;
-    background-color: $azul;
+    background-color: $cajas;
     border-radius: $radio-borde;
  }
 
  .div-article-2 {
     grid-area:  article2; 
-    background-color: $azul;
+    background-color: $cajas;
     border-radius: $radio-borde;
  }
 
  .c-aside {
      grid-area:  aside; 
-     background-color: $azul;
+     background-color: $cajas;
      border-radius: $radio-borde;
  }
 
  .c-footer {
      grid-area:  footer;
-     background-color: $azul;
+     background-color: $cajas;
      border-radius: $radio-borde;
  }
     
