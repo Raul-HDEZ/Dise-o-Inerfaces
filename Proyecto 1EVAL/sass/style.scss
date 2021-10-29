@@ -3,10 +3,13 @@
 // == PALETA ==
 
 $azul-oscuro: #000814;
+$azul-oscuro-transparente: rgba(0, 8, 20, .7);
 $azul: #001d3d;
 $azul-2: #003566;
 $amarillo: #ffc300;
 $gris: #232323;
+$gris-transparente: rgba(35, 35, 35, .7);
+$naranja: #dc2f02;
 
 
 // == CUERPO ==
@@ -32,9 +35,7 @@ img {
 .logo {
     float: left;
     color: $amarillo;
-    background-color: rgba($color: $azul-oscuro, $alpha: 0.5);
     padding: 10px;
-    border-radius: 3px;
 }
 
 nav {
@@ -93,16 +94,49 @@ nav a {
 	margin-bottom: 1.5em;
 	font-weight: 900;
 	margin-top: 1em;
+	background-color: $azul-oscuro-transparente;
+	border-radius: 10px;
 }
 .parallax--box {
 	transition: initial;
 }
 .about-me {
-	background-image: url("../img/fondo.jpg");
+	background-image: url("../img/fondo2.jpg");
 	background-size: cover;
 	background-position: center;
 	padding: 10em 0;
-	color: $azul;
+	color: #FFFFFF;
+}
+
+.home-about-textbox {
+	background-color: $azul-oscuro-transparente;
+	border-radius: 10px;
+	padding: 4em;
+	width: auto;
+	//margin-left: -2.5%;
+	outline: 2px solid $amarillo;
+	outline-offset: -2.5em;
+	color: #FFF;
+	position: sticky;
+}
+
+.home-about-textbox h1 {
+	color: $amarillo;
+	position: absolute;
+	//left: 50%;
+	//transform: translateX(-50%);
+	top: -0.25em;
+	background: unset;
+	//padding: 0 .145em;
+}
+
+.home-about {
+	background-repeat: no-repeat;
+	padding-top: 2em;
+	padding-bottom: 10em;
+	height: auto;
+	width: 100%;
+
 }
 
 // == BOTONES ==
@@ -139,6 +173,19 @@ nav a {
 	background: $amarillo;
 	color: $gris;
 }
+
+.button-main {
+	color: $gris;
+	border-color: $amarillo;
+	background: $amarillo
+}
+
+.button-main:hover,
+.button-main:focus {
+	background: unset;
+	color: $amarillo;
+}
+
 .button-submit {
 	color: $amarillo;
 	border-color: $amarillo;
