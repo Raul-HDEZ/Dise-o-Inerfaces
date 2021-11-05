@@ -90,6 +90,7 @@ nav a {
 
 // == ABOUT ME ==
 .title {
+	padding: 5px;
 	font-size: 2.5rem;
 	margin-bottom: 1.5em;
 	font-weight: 900;
@@ -109,7 +110,7 @@ nav a {
 }
 
 .home-about-textbox {
-	background-color: $azul-oscuro-transparente;
+	background-color: $azul-oscuro;
 	border-radius: 10px;
 	padding: 4em;
 	width: auto;
@@ -138,6 +139,17 @@ nav a {
 	width: 100%;
 
 }
+.about-space {
+	margin-top: -26em;
+}
+
+.studies-space {
+	margin-top: -22em;
+}
+
+.main-page {
+	background-color: $azul-2;
+}
 
 // == BOTONES ==
 /* buttons */
@@ -151,7 +163,29 @@ nav a {
 	border-style: solid;
 	padding: .5em 1.75em;
 }
+// == CONTENEDORES ==
 
+.contenedor-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contenedor-flex > div {
+  
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 25px;
+    width: 100px;
+    border: solid $gris;
+    margin-top: 2em;
+    line-height : 30px;
+  }
+  
+  .elemento {
+    margin: 2em;
+    padding: 16px;
+    background-color: $azul-2;
+  }
 @media (min-width: 60rem) {
 	.button {
 		font-size: 1.5rem;
