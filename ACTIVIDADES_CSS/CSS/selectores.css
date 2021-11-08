@@ -19,3 +19,8 @@ a[target="blank"] {
 a[href^="https"] {
     background-color: yellow;
 }
+
+article:visited div .titulo{
+    color: orangered;
+    font-size: 2em;
+}
