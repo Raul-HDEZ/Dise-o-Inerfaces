@@ -164,7 +164,10 @@ nav a {
 	padding: .5em 1.75em;
 }
 // == CONTENEDORES ==
-
+.element-img{
+	height: 13rem;
+	width: 13rem;
+}
 .contenedor-flex {
     display: flex;
     flex-wrap: wrap;
@@ -175,7 +178,7 @@ nav a {
     text-align: center;
     line-height: 75px;
     font-size: 25px;
-    width: 100px;
+    width: 200px;
     border: solid $gris;
     margin-top: 2em;
     line-height : 30px;
