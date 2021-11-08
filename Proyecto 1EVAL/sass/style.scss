@@ -18,6 +18,7 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	background-color: $azul;
 }
 img {
 	max-width: 100%;
@@ -86,6 +87,7 @@ nav a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+	margin-bottom: 6em;
   }
 
 // == ABOUT ME ==
@@ -140,7 +142,7 @@ nav a {
 
 }
 .about-space {
-	margin-top: -26em;
+	margin-top: -29em;
 }
 
 .studies-space {
@@ -179,7 +181,7 @@ nav a {
     line-height: 75px;
     font-size: 25px;
     width: 200px;
-    border: solid $gris;
+    border: solid $amarillo;
     margin-top: 2em;
     line-height : 30px;
   }
@@ -187,7 +189,8 @@ nav a {
   .elemento {
     margin: 2em;
     padding: 16px;
-    background-color: $azul-2;
+    background-color: $azul;
+	border-radius: 13px;
   }
 @media (min-width: 60rem) {
 	.button {
