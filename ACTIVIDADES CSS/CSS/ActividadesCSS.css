@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "Hello";
+    src: url("../Fuente/Hello/Hello.otf") format("opentype"),
+         url("../Fuente/Hello/Hello.ttf") format("truetype");
+}
+header {
+    background-color: #606c38;
+}
+h1 {
+    text-align: center;
+    font-family: 'Hello';
+    font-size: 80px;
+    margin-top: 20px;
+    padding: 15px;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.cont_grid {
+    display: grid;
+    grid-template-areas:
+        'propiedad1 propiedad2'
+        'propiedad3 propiedad4'
+        'propiedad5 propiedad6';
+    background-color: #dda15e;
+    margin-top: 40px;
+}
+
+#propiedad_1 {
+    grid-area: propiedad1;
+    background-color: #bc6c25;
+}
+#propiedad_2 {
+    grid-area: propiedad2;
+    background-color: #bc6c25;
+}
+#propiedad_3 {
+    grid-area: propiedad3;
+    background-color: #bc6c25;
+}
+#propiedad_4 {
+    grid-area: propiedad4;
+    background-color: #bc6c25;
+}
+#propiedad_5 {
+    grid-area: propiedad5;
+    background-color: #bc6c25;
+}
+#propiedad_6 {
+    grid-area: propiedad6;
+    background-color: #bc6c25;
+}
+
+#propiedad_1, #propiedad_2, #propiedad_3, #propiedad_4, #propiedad_5, #propiedad_6 {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+/*MENU*/
+
+#menu {
+    margin-left: 20px;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style:none;
+}
+.aparte {
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+.aparte li a {
+    background-color:#283618;
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.aparte li a:hover {
+    background-color:#606c38;
+    color: #000000;
+}
+.desplegable {
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+.desplegable li a {
+    background-color:#283618;
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.desplegable li a:hover {
+    background-color:#606c38;
+    color: #000000;
+}
+.desplegable li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.desplegable li:hover > ul {
+    display:block;
+}
+:target {
+    border: 3px solid #ddc7ae;
+  }

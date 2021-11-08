@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/ActividadesCSS.css">
+    <title>Actividades CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Actividades CSS</h1>
+    </header>
+
+    <nav id="menu">
+        <ul class="desplegable">
+            <li><a href="#CSS3">CSS3</a>
+                <ul>
+                    <li><a href="#propiedad_1">CSS Rouded Corners</a></li>
+                    <li><a href="#propiedad_2">CSS Border Images</a></li>
+                    <li><a href="#propiedad_3">CSS Backgrounds</a></li>
+                    <li><a href="#propiedad_4">CSS Gradients</a></li>
+                    <li><a href="#propiedad_5">CSS Shadows</a></li>
+                    <li><a href="#propiedad_6">CSS Text Effects</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="aparte">
+            <li><a href="./selectores.html">Uso del CSS</a></li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+
+    <main class="cont_grid">
+        <article id="propiedad_1">
+            <p class="titulo">Rounded Corners</p>
+            <p>Con la propiedad <i>border radius</i> se le pueden otorgar esquinas redondeadas a un elemento.
+                Esta propiedad define el radio de las esquinas del elemento en cuestión. Además, se puede elegir
+                qué esquinas redondear y cuánto, para darle un toque diferente, y no tienen por qué ser redondas: 
+                también pueden ser elípticas.           
+            </p>
+        </article>
+        <article id="propiedad_2">
+            <p class="titulo">Border Images</p>
+            <p>Con la propiedad <i>border-image</i>, se puede se puede elegir una imagen para ser utilizada 
+                como el borde que rodea a un elemento determinado. Tiene tres partes: qué imagen usar como 
+                borde, dónde cortarla y si las secciones intermedias deben repetirse o estirarse para conformar 
+                el borde.
+            </p>
+        </article>
+        <article id="propiedad_3">
+            <p class="titulo">Backgrounds</p>
+            <p>CSS permite añadir múltiples imágenes de fondo mediante la propiedad <i>background-image</i>. 
+                Los diferentes fondos se separan por comas y las imágenes seleccionadas se van superponiendo 
+                unas encima de otras, de manera que la primera imagen queda más "cerca" del usuario.<br>
+                Por otro lado, existe la propiedad <i>background-size</i>, que permite especificar el tamaño 
+                de las imágenes de fondo. El tamaño se puede espcificar en longitudes, porcentajes, o utilizando 
+                una de las dos palabras clave: <i>contain</i> o <i>cover</i>.<br>
+                La palabra clave <i>contain</i> sirve para que el tamaño de la imagen sea lo más grande posible 
+                dentro del área definida, haciendo que tanto la altura como la anchura entren en ella.<br>
+                Por otro lado, la palabra clave <i>cover</i> sirve para que la imagen cubra completamente el área 
+                seleccionada, aunque algunas partes se queden fuera.
+            </p>
+        </article>
+        <article id="propiedad_4">
+            <p class="titulo">Gradients</p>
+            <p>Los degradados o <i>gradients</i> permiten realizar transiciones suaves entre dos o más colores.<br>
+                Se puede degradar el color de manera linear, utilizando <i>linear-gradient</i>, especificando tanto el
+                tipo (horizontal, vertical, diagonal) como la dirección (de arriba hacia abajo, de izquierda a derecha...);
+                utilizando ángulos, utilizando la etiqueta anterior con el añadido <i>angle</i> antes de la declaración 
+                de los colores, y usando paradas de varios colores.
+            </p>
+        </article>
+        <article id="propiedad_5">
+            <p class="titulo">Shadows</p>
+            <p>Con CSS se puede añadir sombra al texto o elemento seleccionado. Hay dos propiedades importantes dentro del 
+                sombreado de elementos: <i>text-shadow</i> y <i>box-shadow</i>.<br>
+                La primera aplica texto a un texto, y se le pueden especificar tanto los pixeles que se moverá el sombreado 
+                desde la posición del texto orignial en ambos ejes (x e y), como los que ocupará el difuminado y 
+                el color del mismo, entre otras cosas.<br>
+                La segunda, por otro lado, sirve para dar sombras a otros elementos del html. Se declara de la misma manera 
+                que la anterior propiedad.
+            </p>
+        </article>
+        <article id="propiedad_6">
+            <p class="titulo">Text Effects</p>
+            <p>Existen cuatro propiedades dentro de este epígrafe:<br>
+                <br><b><i>Text-overflow</i></b><br>
+                Esta propiedad especifica la manera en la que se le señala al usuario el contenido desbordado que no se 
+                muestra.
+                <br><br><b><i>Word-wrap</i></b><br>
+                Permite forzar el ajuste de texto incluso si se ha de partir una palabra. Esto puede darse cuando el tamaño 
+                de una palabra es superior al de la caja que la contiene.
+                <br><br><b><i>Word-break</i></b><br>
+                Esta propiedad especifica las reglas de salto de línea de un texto determinado.
+                <br><br><b><i>Writing-mode</i></b><br>
+                Especifica si las líneas de texto escogidas se distribuyen a lo largo de un área determinada de manera vertical 
+                u horizontal.
+            </p>
+        </article>
+    </main>
+</body>
+</html>
