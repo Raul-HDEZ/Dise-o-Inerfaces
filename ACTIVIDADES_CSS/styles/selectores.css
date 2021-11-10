@@ -1,0 +1,26 @@
+s {
+    color:red;
+    font-size: 0.75rem;    
+}
+
+.lorem{
+    border: solid green;
+    box-shadow: 5px 6px darkgreen;
+}
+
+#iris {
+    background-image: linear-gradient(#e74c3c, #e67e22, #f1c40f, #2ecc71, #16a085, #3498db, #9b59b6);
+}
+
+a[target="blank"] {
+    background-color: orangered;
+}
+
+a[href^="https"] {
+    background-color: yellow;
+}
+
+article:visited div .titulo{
+    color: orangered;
+    font-size: 2em;
+}
