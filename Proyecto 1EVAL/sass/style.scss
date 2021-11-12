@@ -310,3 +310,13 @@ nav a {
 		transform: translateY(0%);
 	}
 }
+
+/* FOOTER
+=================== */
+
+footer {
+	background-color: $amarillo;
+	padding: 0.05em;
+	display: flex;
+    justify-content: space-between;
+}
