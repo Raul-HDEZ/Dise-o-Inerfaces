@@ -11,6 +11,10 @@ $gris: #232323;
 $gris-transparente: rgba(35, 35, 35, .7);
 $naranja: #dc2f02;
 
+@if ( 2 = 2) {
+	$naranja: #dc2f02;
+}
+
 
 // == CUERPO ==
 
