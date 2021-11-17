@@ -24,3 +24,48 @@ article:visited div .titulo{
     color: orangered;
     font-size: 2em;
 }
+
+:target {
+    border: unset ;
+  }
+
+:target .titulo{
+    color: orangered ;
+    font-size: 2em;
+  }
+
+p:lang(it) { 
+  color: #16a085;
+  font-size: 0.5rem
+}
+
+p:lang(es) { 
+    color: #9b59b6;
+    font-size: 0.8rem
+}
+
+p:lang(fr) { 
+    color: #e74c3c;
+    font-size: 1rem
+}
+
+li:first-child{
+color: #f1c40f;
+}
+
+li:last-child{
+color: #f1c40f;
+}
+
+li:nth-child(2n){
+color: orangered;
+}
+
+#pseudo p::first-letter{
+    color: #f1c40f;
+    font-size: 2rem;
+}
+
+#pseudo p::first-line{
+    font-style: italic;
+}

@@ -38,13 +38,19 @@ main {
 .titulo {
     font-size: 20px;
     font-weight: bold;
+    color: $amarillo;
 }
 .cont_grid {
     display: grid;
     grid-template-areas:
         'propiedad1 propiedad2'
         'propiedad3 propiedad4'
-        'propiedad5 propiedad6';
+        'propiedad5 propiedad6'
+        'propiedad7 propiedad8'
+        'propiedad9 propiedad10'
+        'propiedad11 propiedad12'
+        'propiedad13 propiedad14'
+        'propiedad15 propiedad15';
     background-color: $azul-oscuro;
     margin-top: 40px;
 }
@@ -56,27 +62,117 @@ main {
 #propiedad_2 {
     grid-area: propiedad2;
     background-color: $azul-2;
+    border-image: url('../img/border.png') 30 round;
 }
 #propiedad_3 {
     grid-area: propiedad3;
     background-color: $azul-2;
+    background-image: url('../img/border.png');
 }
 #propiedad_4 {
     grid-area: propiedad4;
-    background-color: $azul-2;
+    background: linear-gradient(to bottom right, $azul-2, $amarillo);;
 }
 #propiedad_5 {
     grid-area: propiedad5;
     background-color: $azul-2;
+    box-shadow: 5px 6px $amarillo;
 }
 #propiedad_6 {
     grid-area: propiedad6;
     background-color: $azul-2;
+    overflow: hidden;
+    text-overflow: clip;
 }
 
-#propiedad_1, #propiedad_2, #propiedad_3, #propiedad_4, #propiedad_5, #propiedad_6 {
+#propiedad_7 {
+    grid-area: propiedad7;
+    background-color: $azul-2;
+    transform: rotate(2deg);
+}
+#propiedad_8 {
+    grid-area: propiedad8;
+    background-color: $azul-2;
+    transform: rotateX(150deg);
+}
+#propiedad_9 {
+    grid-area: propiedad9;
+    background-color: $azul-2;
+    transition: background-color 2s;
+}
+#propiedad_9:hover {
+    background-color: $gris;
+}
+#propiedad_10 {
+    grid-area: propiedad10;
+    background-color: $azul-2;
+    animation-name: propiedad10;
+    animation-duration: 4s;
+}
+#propiedad_11 {
+    grid-area: propiedad11;
+    background-color: $azul-2;
+    color: $naranja;
+    .tooltip-text{
+        visibility: hidden;
+    }
+    .tooltip:hover .tooltip-text{
+        visibility: visible;
+        color: $amarillo;
+    }
+}
+#propiedad_12 {
+    grid-area: propiedad12;
+    background-color: $azul-2;
+}
+#propiedad_13 {
+    grid-area: propiedad13;
+    background-color: $azul-2;
+    .pagination {
+        display: inline-block;
+      }
+      
+      .pagination a {
+        color: $amarillo;
+        float: left;
+        padding: 8px 16px;
+        text-decoration: none;
+      }
+}
+#propiedad_14 {
+    grid-area: propiedad14;
+    background-color: $azul-2;
+    column-count: 3;
+}
+#propiedad_15 {
+    grid-area: propiedad15;
+    background-color: $azul-2;
+    resize: vertical;
+    overflow: auto;
+}
+
+.button {
+    background-color: $amarillo;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+@keyframes propiedad10 {
+    from {background-color: $azul-2;}
+    to {background-color: $gris;}
+  }
+
+article {
     padding: 20px;
     margin: 20px;
+    background-color: $azul-2;
     border-radius: 10px;
     text-align: justify;
 }
