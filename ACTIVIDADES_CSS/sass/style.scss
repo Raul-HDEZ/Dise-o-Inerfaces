@@ -62,7 +62,8 @@ main {
 #propiedad_2 {
     grid-area: propiedad2;
     background-color: $azul-2;
-    border-image: url('../img/border.png') 30 round;
+    border: 10px solid transparent;
+    border-image: url('../img/borde.png') 40% stretch;
 }
 #propiedad_3 {
     grid-area: propiedad3;
