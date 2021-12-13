@@ -1,0 +1,151 @@
+// == PALETA ==
+
+$azul-oscuro: #000814;
+$azul-oscuro-transparente: rgba(0, 8, 20, .7);
+$azul: #001d3d;
+$azul-2: #003566;
+$amarillo: #ffc300;
+$gris: #232323;
+$gris-transparente: rgba(35, 35, 35, .7);
+$naranja: #dc2f02;
+
+@font-face {
+    font-family: "Hello";
+    src: url("../Fuente/Hello/Hello.otf") format("opentype"),
+         url("../Fuente/Hello/Hello.ttf") format("truetype");
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+body{
+    background-color: $gris;
+}
+
+header {
+    background-color: $azul;
+}
+h1 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    margin-top: 20px;
+    padding: 15px;
+    color: $amarillo;
+}
+main {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.titulo {
+    font-size: 20px;
+    font-weight: bold;
+    color: $amarillo;
+}
+.cont_grid {
+    display: grid;
+    grid-template-areas:
+        'propiedad1'
+        'propiedad2'
+        'propiedad3'
+        'propiedad4'
+        'propiedad5'
+        'propiedad6'
+        'propiedad7';
+    background-color: $azul-oscuro;
+    margin-top: 40px;
+}
+
+#propiedad_1 {
+    grid-area: propiedad1;
+    img{
+        border-radius: 8px;
+        height: 30vw;
+        height: 30vw;
+    }
+}
+#propiedad_2 {
+    grid-area: propiedad2;
+    img{
+        border-radius: 8px;
+        height: 30vw;
+        height: 30vw;
+    }
+}
+#propiedad_3 {
+    grid-area: propiedad3;
+}
+#propiedad_4 {
+    grid-area: propiedad4;
+}
+#propiedad_5 {
+    grid-area: propiedad5;
+}
+#propiedad_6 {
+    grid-area: propiedad6;
+}
+
+#propiedad_7 {
+    grid-area: propiedad7;
+}
+
+article {
+    padding: 20px;
+    margin: 20px;
+    background-color: $azul-2;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+
+/*MENU*/
+
+#menu {
+    margin-left: 20px;
+    width:500px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+ul {
+    list-style:none;
+}
+.aparte {
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+.aparte li a {
+    background-color:$azul;
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.aparte li a:hover {
+    background-color:$azul-2;
+    color: #000000;
+}
+.desplegable {
+    float:left;
+    margin: 0px;
+    padding: 0px;
+}
+.desplegable li a {
+    background-color:$azul;
+    color:#ffffff;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+.desplegable li a:hover {
+    background-color:$azul-2;
+    color: #000000;
+}
+.desplegable li ul {
+    display:none;
+    position:absolute;
+    min-width: 80px;
+}
+.desplegable li:hover > ul {
+    display:block;
+}
+:target {
+    border: 3px solid $amarillo ;
+  }

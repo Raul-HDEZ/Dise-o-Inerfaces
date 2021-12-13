@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Actividades CSS</title>
+</head>
+<body>
+    <header>
+        <h1>Actividad tema Multimedia</h1>
+    </header>
+
+    <nav id="menu">
+        <ul class="desplegable">
+            <li><a href="#CSS3">Nav</a>
+                <ul>
+                    <li><a href="#propiedad_1">Mapa de pixeles</a></li>
+                    <li><a href="#propiedad_2">Imagen vectorial</a></li>
+                    <li><a href="#propiedad_3">Etiqueta picture</a></li>
+                    <li><a href="#propiedad_4">Animacion con @keyframes</a></li>
+                    <li><a href="#propiedad_5">Imagen con Canvas</a></li>
+                    <li><a href="#propiedad_6">Audio</a></li>
+                    <li><a href="#propiedad_7">Video</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <br><br><br>
+    
+    <main class="cont_grid">
+        <article id="propiedad_1">
+            <p class="titulo">Mapa de pixeles</p>
+            <img src="./img/aurora.jpg" alt="">
+        </article>
+        <article id="propiedad_2">
+            <p class="titulo">Imagen vectorial</p>
+            <img src="./img/freepik.svg" alt="">
+        </article>
+        <article id="propiedad_3">
+            <p class="titulo">Etiqueta picture</p>
+            <!--EDITAR-->
+            <picture>
+                <source media="(min-width: 1280px)" srcset="/assets/images/isaac-newton-l.jpg">
+                <source media="(max-width: 520px)" srcset="/assets/images/isaac-newton-s.jpg">
+                <img class="float-right" src="/assets/images/isaac-newton.jpg" alt="Sir Isaac Newton">
+              </picture>
+        </article>
+        <article id="propiedad_4">
+            <p class="titulo">Animacion con @keyframes</p>
+            <img src="./img/freepik.svg" alt="">
+        </article>
+        <article id="propiedad_5">
+            <p class="titulo">Imagen con Canvas</p>
+            <img src="./img/freepik.svg" alt="">
+        </article>
+        <article id="propiedad_6">
+            <p class="titulo">Audio</p>
+            <img src="./img/freepik.svg" alt="">
+        </article>
+        <article id="propiedad_7">
+            <p class="titulo">Video</p>
+            <img src="./img/freepik.svg" alt="">
+        </article>
+    </main>
+    
+</body>
+</html>
