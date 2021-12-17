@@ -14,7 +14,7 @@
 
     <nav id="menu">
         <ul class="desplegable">
-            <li><a href="#CSS3">Nav</a>
+            <li><a href="#CSS3">Navegador</a>
                 <ul>
                     <li><a href="#propiedad_1">Mapa de pixeles</a></li>
                     <li><a href="#propiedad_2">Imagen vectorial</a></li>
@@ -33,28 +33,57 @@
     <main class="cont_grid">
         <article id="propiedad_1">
             <p class="titulo">Mapa de pixeles</p>
-            <img src="./img/aurora.jpg" alt="">
+            <div class="polaroid">
+                <img src="./img/aurora.jpg" alt="Auroras" style="width:100%">
+                <div class="container">
+                <p>Aurora Boreal</p>
+                </div>
+              </div>
         </article>
         <article id="propiedad_2">
             <p class="titulo">Imagen vectorial</p>
-            <img src="./img/freepik.svg" alt="">
+            <img class="invert" src="./img/freepik.svg" alt="">
         </article>
         <article id="propiedad_3">
             <p class="titulo">Etiqueta picture</p>
-            <!--EDITAR-->
             <picture>
-                <source media="(min-width: 1280px)" srcset="/assets/images/isaac-newton-l.jpg">
-                <source media="(max-width: 520px)" srcset="/assets/images/isaac-newton-s.jpg">
-                <img class="float-right" src="/assets/images/isaac-newton.jpg" alt="Sir Isaac Newton">
+                <source media="(min-width: 1280px)" srcset="./img/aurora2.jpg">
+                <source media="(max-width: 520px)" srcset="./img/aurora.jpg">
+                <img src="./img/aurora.jpg" alt="Aurora">
               </picture>
         </article>
-        <article id="propiedad_4">
+        <article id="propiedad_4" class="row">
             <p class="titulo">Animacion con @keyframes</p>
-            <img src="./img/freepik.svg" alt="">
+            <div class="square slide"></div>
+                
         </article>
         <article id="propiedad_5">
             <p class="titulo">Imagen con Canvas</p>
-            <img src="./img/freepik.svg" alt="">
+            
+            <canvas id="lienzo" width="200" height="100"
+            style="border:1px solid yellow;">
+            Canvas no soportado por el navegador
+            </canvas>
+
+            <script>
+            var canvas = document.getElementById("lienzo");
+            var ctx = canvas.getContext("2d");
+            ctx.fillStyle = "yellow";
+            ctx.fillRect(0,0,150,75);
+            </script>
+
+            <canvas id="lienzo2" width="500" height="300"
+            style="border:1px solid yellow;">
+            Canvas no soportado por el navegador
+            </canvas>
+            <script>
+                var canvas = document.getElementById("lienzo2");
+                var ctx = canvas.getContext("2d");
+                var img = new Image();
+                img.src = './img/aurora2.jpg';
+                ctx.drawImage(img, 0, 0);
+            </script>
+
         </article>
         <article id="propiedad_6">
             <p class="titulo">Audio</p>

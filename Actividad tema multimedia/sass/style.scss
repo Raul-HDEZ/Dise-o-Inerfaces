@@ -54,27 +54,63 @@ main {
     margin-top: 40px;
 }
 
+img{
+    border-radius: 8px;
+    height: 30vw;
+    height: 30vw;
+}
+
 #propiedad_1 {
     grid-area: propiedad1;
-    img{
-        border-radius: 8px;
-        height: 30vw;
-        height: 30vw;
-    }
+    div.polaroid {
+        width: 80%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+      
+      img {width: 30vw}
+      
+      div.container {
+        text-align: center;
+        padding: 10px 20px;
+      }
 }
 #propiedad_2 {
     grid-area: propiedad2;
-    img{
-        border-radius: 8px;
-        height: 30vw;
-        height: 30vw;
-    }
+    .invert {filter: invert(100%);}
 }
 #propiedad_3 {
     grid-area: propiedad3;
 }
 #propiedad_4 {
     grid-area: propiedad4;
+    padding-bottom: 7rem;
+    .row {
+        min-height: 300px;
+        position: relative;
+        margin-bottom: 20px;
+    }
+    
+    .square {
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        background: $amarillo;
+    }
+
+    .slide {
+        position: absolute;
+        animation: slide 4s infinite linear;
+    }
+    
+    @keyframes slide {
+        from {
+        transform: translate(0, 0);
+        }
+        to {
+        transform: translate(300%, 0);
+        }
+    }     
 }
 #propiedad_5 {
     grid-area: propiedad5;
