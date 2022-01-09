@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <h1>Ejercicio 1</h1>
+    <a>Raul</a>
+
+    <script>
+        $("a").click(function(){
+            $(this).hide(5000);
+            $(this).show(3000);
+            $(this).hide(1);
+            $(this).show(200);
+            $(this).hide(1);
+            $(this).show(2000, function(){
+                alert("He tardado 2 segundos");
+            });
+            
+        });
+    </script>
+</body>
+</html>
