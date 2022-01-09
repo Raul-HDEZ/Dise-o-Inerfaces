@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Ejercicio 6</title>
+</head>
+<body>
+    <form>
+        Asignatura 1 <input type="text"><br><br>
+        Asignatura 2 <input type="text"><br><br>
+        Asignatura 3 <input type="text"><br><br>
+        Asignatura 4 <input type="text"><br><br>
+        Asignatura 5 <input type="text"><br><br>
+        Asignatura 6 <input type="text"><br>
+    </form>
+
+    <script>
+        $("input").focus(function(){
+            $(this).css('color', 'red');
+        });
+
+        $("input").blur(function(){
+            $(this).css('color', 'green');
+        });
+    </script>
+</body>
+</html>
