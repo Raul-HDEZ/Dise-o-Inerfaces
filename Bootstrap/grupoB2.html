@@ -45,9 +45,51 @@
             <div class="ej1">            
                 <section id="ej1">
                     <!-- Iván Soto esta es tu area de trabajo -->
-                    <h2>Titulo de parte de Iván Soto Alerts</h2><br><br>
-                    <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>Alerts</h2><br><br>
+                    <div class="container">
+                        <div>
+                                <p>
+                                    Las alertas funcionan como una clase para los div utilizando el atributo class y el atributo role
+                                    ademas de una subclase.
+                                    Por ejemplo, divs con la class alert y el role alert con las distintas subclases de alerts en
+                                    bootstrap 5.
+                                </p>
+                    
+                                <div class="alert alert-primary" role="alert">Primary alert!</div>
+                                <div class="alert alert-secondary" role="alert">Secondary alert!</div>
+                                <div class="alert alert-success" role="alert">Success alert!</div>
+                                <div class="alert alert-danger" role="alert">Danger alert!</div>
+                                <div class="alert alert-warning" role="alert">Warning alert!</div>
+                                <div class="alert alert-info" role="alert"> Info alert!</div>
+                                <div class="alert alert-light" role="alert">Light alert!</div>
+                                <div class="alert alert-dark" role="alert">Dark alert!</div>
+                                <div class="alert alert-primary" role="alert">
+                                    Primary alert con <a href="#" class="alert-link"> un enlace </a>.
+                                </div>
+                    
+                                <div class="alert alert-success" role="alert">
+                                    <h4 class="alert-heading"> ¡Mira, es un encabezado en un alert! </h4>
+                                    <p> ¡Eso es! Acabas de leer este mensaje de alerta tan importante.</p>
+                                    <hr>
+                                    <p class="mb-0"> Y ahora acabas de aprender que muchos otros elementos pueden ser incluidos dentro de un alert.</p>
+                                </div>
+                    
+                                <div class="alert alert-primary d-flex align-items-center" role="alert">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                    </svg>
+                    
+                                    <div>
+                                        Un ejemplo de alerta con un icono vectorial.
+                                    </div>
+                    
+                                </div>
+                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                    Esta alerta solo esta para informarte de que puedes hacer que se cierren con un botón. Usando siempre la subclase de alert-dismissible y el atributo data-bs-dismiss en el botón.  
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                        </div>
+                    </div>
                 </section>
             </div>
 
@@ -56,25 +98,68 @@
                     <!-- Raúl Pérez esta es tu area de trabajo -->
                     <h2>Titulo de parte de Raúl Pérez Buttons</h2><br><br>
                     <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <div class="container">Hola soy tu div para hacerme container y trabajar dentro</div>
                 </section>
             </div>
 
-            <div class="ej2">            
-                <section id="ej2">
+            <div class="ej3">            
+                <section id="ej3">
                     <!-- Raúl Pérez esta es tu area de trabajo -->
                     <h2>Titulo de parte de Raúl Pérez Button Groups</h2><br><br>
                     <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <div class="container">Hola soy tu div para hacerme container y trabajar dentro</div>
                 </section>
             </div>
 
-            <div class="ej1">            
-                <section id="ej1">
+            <div class="ej3">            
+                <section id="ej3">
                     <!-- Iván Soto esta es tu area de trabajo -->
-                    <h2>Titulo de parte de Iván Soto Badges</h2><br><br>
-                    <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="alumno1container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>Badges</h2><br><br>
+                    <div class="container">
+                        <p>
+                            Una badge o insignia o insignias son etiquetas (label) que en bootstrap funcionan con una clase
+                            badge" y una subclase, en este caso "badge-secondary"
+                        </p>
+                        <h3> UN TITULO <span class="badge bg-secondary"> una badge </span> </h3>
+                        <p>
+                            Las badges escalan hasta el tamaño del elemento padre. En el ejemplo tenemos
+                            3 titulos de distintos tamaños con el mismo badge que escalan a el mismo tamaño
+                            que el elemento titulo del que descienden.
+                        </p>
+                        <h5> SOY UN TITULO PEQUEÑO <span class="badge bg-secondary"> badge pequeño </span> </h5>
+                        <h3> SOY UN TITULO <span class="badge bg-secondary"> badge </span> </h3>
+                        <h1> SOY UN TITULO GRANDE <span class="badge bg-secondary"> badge grande </span> </h1>
+                        <p>
+                            Las badges pueden ir dentro de elementos como por ejemplo button.
+                        </p>
+                        <button class="btn btn-primary"> Botón <span class="badge bg-info"> Badge </span> </button>
+                        <p>
+                            Las badges pueden tambien tener tambien otra posición relativa al elemento que las contiene.
+                        </p>
+                        <button type="button" class="btn btn-primary position-relative">
+                            Inbox <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                99+ </span>
+                        </button>
+                        <p>
+                            Bootstrap 5 cuenta con 8 subclases de badged en función del color.
+                        </p>
+            
+                        <span class="badge bg-primary"> Primary </span>
+                        <span class="badge bg-secondary"> Secondary </span>
+                        <span class="badge bg-success"> Success </span>
+                        <span class="badge bg-danger"> Danger </span>
+                        <span class="badge bg-warning"> Warning </span>
+                        <span class="badge bg-info"> Info </span>
+                        <span class="badge bg-light text-dark"> Light </span>
+                        <span class="badge bg-dark"> Dark </span>
+            
+                        <p>
+                            Por ultimo las badge pueden redondearse usando la clase rounded-pill y el texto puede cambiarse a
+                            negro usando la clase text-dark.
+                        </p>
+            
+                        <span class="badge rounded-pill bg-info text-dark"> Rounded </span>
+                    </div>
                 </section>
             </div>
 
