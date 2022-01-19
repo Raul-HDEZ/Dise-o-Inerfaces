@@ -49,66 +49,387 @@
                     <h2>Alerts</h2><br><br>
                     <div class="container">
                         <div>
-                                <p>
-                                    Las alertas funcionan como una clase para los div utilizando el atributo class y el atributo role
-                                    ademas de una subclase.
-                                    Por ejemplo, divs con la class alert y el role alert con las distintas subclases de alerts en
-                                    bootstrap 5.
-                                </p>
-                    
-                                <div class="alert alert-primary" role="alert">Primary alert!</div>
-                                <div class="alert alert-secondary" role="alert">Secondary alert!</div>
-                                <div class="alert alert-success" role="alert">Success alert!</div>
-                                <div class="alert alert-danger" role="alert">Danger alert!</div>
-                                <div class="alert alert-warning" role="alert">Warning alert!</div>
-                                <div class="alert alert-info" role="alert"> Info alert!</div>
-                                <div class="alert alert-light" role="alert">Light alert!</div>
-                                <div class="alert alert-dark" role="alert">Dark alert!</div>
-                                <div class="alert alert-primary" role="alert">
-                                    Primary alert con <a href="#" class="alert-link"> un enlace </a>.
+                            <p>
+                                Las alertas funcionan como una clase para los div utilizando el atributo class y el atributo role
+                                ademas de una subclase.
+                                Por ejemplo, divs con la class alert y el role alert con las distintas subclases de alerts en
+                                bootstrap 5.
+                            </p>
+                
+                            <div class="alert alert-primary" role="alert">
+                                Primary alert!
+                            </div>
+                
+                            <div class="alert alert-secondary" role="alert">
+                                Secondary alert!
+                            </div>
+                
+                            <div class="alert alert-success" role="alert">
+                                Success alert!
+                            </div>
+                
+                            <div class="alert alert-danger" role="alert">
+                                Danger alert!
+                            </div>
+                
+                            <div class="alert alert-warning" role="alert">
+                                Warning alert!
+                            </div>
+                
+                            <div class="alert alert-info" role="alert">
+                                Info alert!
+                            </div>
+                
+                            <div class="alert alert-light" role="alert">
+                                Light alert!
+                            </div>
+                
+                            <div class="alert alert-dark" role="alert">
+                                Dark alert!
+                            </div>
+
+                            <p> Codigo de un primary alert: </p>
+
+                            <code>&lt;div class="alert alert-primary" role="alert"&gt;
+                                Primary alert!
+                            &lt;/div&gt; </code>
+                
+                            <div class="alert alert-primary" role="alert">
+                                Primary alert con <a href="#" class="alert-link"> un enlace </a>.
+                            </div>
+
+                            <code> &lt;div class="alert alert-primary" role="alert"&gt;
+                                Primary alert con &lt;a href="#" class="alert-link"&gt; un enlace &lt;/a&gt;.
+                            &lt;/div&gt; </code> <br><br>
+                
+                            <div class="alert alert-success" role="alert">
+                                <h4 class="alert-heading"> ¡Mira, es un encabezado en un alert! </h4>
+                                <p> ¡Eso es! Acabas de leer este mensaje de alerta tan importante.</p>
+                                <hr>
+                                <p class="mb-0"> Y ahora acabas de aprender que muchos otros elementos pueden ser incluidos dentro de un alert.</p>
+                              
+                            </div>
+
+                            <code> &lt;div class="alert alert-success" role="alert"&gt;<br>
+                                &lt;h4 class="alert-heading"&gt; ¡Mira, es un encabezado en un alert! &lt;/h4&gt;<br>
+                                &lt;p&gt; ¡Eso es! Acabas de leer este mensaje de alerta tan importante.&lt;/p&gt;<br>
+                                &lt;p class="mb-0"&gt; Y ahora acabas de aprender que muchos otros elementos pueden ser incluidos dentro de un alert.&lt;/p&gt;<br>
+                            &lt;/div&gt; </code>
+                
+                            <div class="alert alert-primary d-flex align-items-center" role="alert">
+                
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
+                                    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                                </svg>
+                
+                                <div>
+                                    Un ejemplo de alerta con un icono vectorial.
                                 </div>
-                    
-                                <div class="alert alert-success" role="alert">
-                                    <h4 class="alert-heading"> ¡Mira, es un encabezado en un alert! </h4>
-                                    <p> ¡Eso es! Acabas de leer este mensaje de alerta tan importante.</p>
-                                    <hr>
-                                    <p class="mb-0"> Y ahora acabas de aprender que muchos otros elementos pueden ser incluidos dentro de un alert.</p>
-                                </div>
-                    
-                                <div class="alert alert-primary d-flex align-items-center" role="alert">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-exclamation-triangle-fill flex-shrink-0 me-2" viewBox="0 0 16 16" role="img" aria-label="Warning:">
-                                        <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
-                                    </svg>
-                    
-                                    <div>
-                                        Un ejemplo de alerta con un icono vectorial.
-                                    </div>
-                    
-                                </div>
-                                <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                                    Esta alerta solo esta para informarte de que puedes hacer que se cierren con un botón. Usando siempre la subclase de alert-dismissible y el atributo data-bs-dismiss en el botón.  
-                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                                </div>
-                        </div>
-                    </div>
+                
+                            </div>
+                
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                
+                                Esta alerta solo esta para informarte de que puedes hacer que se cierren con un botón. Usando siempre la subclase de alert-dismissible y el atributo data-bs-dismiss en el botón.
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                              
+                            </div>
+
+                            <code> &lt;div class="alert alert-warning alert-dismissible fade show" role="alert"&gt; <br>
+                                Esta alerta solo esta para informarte de que puedes hacer que se cierren con un botón. Usando siempre la subclase de alert-dismissible y el atributo data-bs-dismiss en el botón. <br>
+                                &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"&gt; &lt;/button&gt;<br>
+                            &lt;/div&gt; </code>
                 </section>
             </div>
 
             <div class="ej2">            
                 <section id="ej2">
                     <!-- Raúl Pérez esta es tu area de trabajo -->
-                    <h2>Titulo de parte de Raúl Pérez Buttons</h2><br><br>
-                    <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>Botones y grupo de botones</h2><br><br>
+                    <div class="container">
+                    <div class="raulpcontainer">
+                        <p>Bootstrap 5 proporciona diferentes estilos de botones para acciones en formularios, cuadros
+                            de
+                            diálogo y más con soporte para múltiples tamaños, estados y más.</p>
+
+                        <div>
+                            <h4>Estilo de botones</h4>
+                            <p>Las clases de botones se pueden usar en elementos <span
+                                    style="color: red; font-weight: bolder;">a , button o input</span></p>
+                            <button type="button" class="btn btn-primary">Primary</button>
+                            <button type="button" class="btn btn-danger">Danger</button>
+                            <a href="https://www.iestetuan.es/cmsj/" class="btn btn-success" target="blank">Link IES
+                                Tetuan</a>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt; <br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;<br>
+                                &lt;a href=&quot;https://www.iestetuan.es/cmsj/&quot; class=&quot;btn btn-success&quot; target=&quot;blank&quot;&gt;Link IES Tetuan&lt;/a&gt;<br>           
+                            &lt;/div&gt;
+                        </code>
+
+                        <div>
+                            <h4>Contorno del botón</h4>
+                            <p>Reemplace las clases de modificador predeterminadas con las <span
+                                    style="color: red; font-weight: bolder;">.btn-outline-*</span> que eliminan todas
+                                las imágenes y colores de fondo en cualquier botón.</p>
+                            <button type="button" class="btn btn-outline-primary">Primary</button>
+                            <button type="button" class="btn btn-outline-danger">Danger</button>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt; <br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-primary&quot;&gt;Primary&lt;/button&gt; <br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-outline-danger&quot;&gt;Danger&lt;/button&gt;<br>
+                        &lt;/div&gt;
+                        </code>
+
+                        <div>
+                            <h4>Tamaño de los botones</h4>
+                            <p>Use la <span style="color: red; font-weight: bolder;">.btn-lg</span> clase para botones
+                                grandes o <span style="color: red; font-weight: bolder;">.btn-sm</span> la clase para
+                                botones pequeños:</p>
+                            <button type="button" class="btn btn-primary btn-lg">Large</button>
+                            <button type="button" class="btn btn-primary">Default</button>
+                            <button type="button" class="btn btn-primary btn-sm">Small</button>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt; <br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-lg&quot;&gt;Large&lt;/button&gt;<br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Default&lt;/button&gt;<br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-sm&quot;&gt;Small&lt;/button&gt;<br>
+                        &lt;/div&gt; <br>
+                        </code>
+
+                        <div>
+                            <h4>Botones de nivel de bloque</h4>
+                            <p>Para crear un botón de nivel de bloque que abarque todo el ancho del elemento principal,
+                                use la <span style="color: red; font-weight: bolder;">.d-grid</span> clase "ayudante" en
+                                el elemento principal.
+                                Si tiene muchos botones a nivel de bloque, puede controlar el espacio entre ellos con la
+                                <span style="color: red; font-weight: bolder;">.gap-*</span> clase:
+                            </p>
+                            <div class="d-grid gap-3">
+                                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                                <button type="button" class="btn btn-primary btn-block">Full-Width Button</button>
+                            </div>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt; <br>
+                            &lt;div class=&quot;d-grid gap-3&quot;&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Full-Width Button&lt;/button&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Full-Width Button&lt;/button&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Full-Width Button&lt;/button&gt;<br>
+                            &lt;/div&gt;<br>
+                        &lt;/div&gt;<br>
+                        </code>
+
+                        <div>
+                            <h4>Botones activos/deshabilitados</h4>
+                            <p>Un botón se puede establecer en un estado activo (aparece presionado) o deshabilitado (no
+                                se puede hacer clic).
+                                La clase <span style="color: red; font-weight: bolder;">.active</span> hace que un botón
+                                parezca presionado y el <span style="color: red; font-weight: bolder;">disabled</span>
+                                atributo hace que no se pueda hacer clic en un botón.</p>
+                            <button type="button" class="btn btn-primary active">Active Primary</button>
+                            <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt;<br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary active&quot;&gt;Active Primary&lt;/button&gt;<br>
+                            &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Disabled Primary&lt;/button&gt;<br>
+                        &lt;/div&gt;<br>
+                        </code>
+
+                        <div>
+                            <h4>Botones giratorios</h4>
+                            <p>También puede agregar "spinners" a un botón</p>
+                            <button class="btn btn-primary">
+                                <span class="spinner-border spinner-border-sm"></span>
+                            </button>
+
+                            <button class="btn btn-primary">
+                                <span class="spinner-border spinner-border-sm"></span>
+                                Loading..
+                            </button>
+
+                            <button class="btn btn-primary" disabled>
+                                <span class="spinner-border spinner-border-sm"></span>
+                                Loading..
+                            </button>
+
+                            <button class="btn btn-primary" disabled>
+                                <span class="spinner-grow spinner-grow-sm"></span>
+                                Loading..
+                            </button>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt; <br>
+                                &lt;button class=&quot;btn btn-primary&quot;&gt;<br>
+                                    &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;<br>
+                                &lt;/button&gt;<br>
+
+                                &lt;button class=&quot;btn btn-primary&quot;&gt;<br>
+                                    &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;<br>
+                                    Loading..<br>
+                                &lt;/button&gt;<br>
+
+                                &lt;button class=&quot;btn btn-primary&quot; disabled&gt;<br>
+                                    &lt;span class=&quot;spinner-border spinner-border-sm&quot;&gt;&lt;/span&gt;<br>
+                                    Loading..<br>
+                                &lt;/button&gt;<br>
+
+                                &lt;button class=&quot;btn btn-primary&quot; disabled&gt;<br>
+                                    &lt;span class=&quot;spinner-grow spinner-grow-sm&quot;&gt;&lt;/span&gt;<br>
+                                    Loading..<br>
+                                &lt;/button&gt;<br>
+                            &lt;/div&gt;<br>
+                        </code>
+                    </div>
                 </section>
             </div>
 
             <div class="ej3">            
                 <section id="ej3">
                     <!-- Raúl Pérez esta es tu area de trabajo -->
-                    <h2>Titulo de parte de Raúl Pérez Button Groups</h2><br><br>
-                    <p>Parrafo para el alumno 3 !Documentame!</p><br>
-                    <div class="container">Hola soy tu div para hacerme container y trabajar dentro</div>
+                    <h2>Grupo de botones</h2><br><br>
+                    <div class="container">
+                        <p>Los grupos de botones permite agrupar una serie de botones (en una sola línea).</p><br>
+
+                        <div>
+                            <p> Use un <span style="color: red; font-weight: bolder;">div</span> elemento con clase
+                                <span style="color: red; font-weight: bolder;">.btn-group</span> para crear un grupo de botones.
+                                En lugar de aplicar tamaños de botón a cada botón de un grupo, use class <span style="color: red; font-weight: bolder;">.btn-group-lg</span> para un grupo
+                                de botones grande o <span style="color: red; font-weight: bolder;">.btn-group-sm</span> para un grupo de botones pequeño:</p>
+                            <p>Large Buttons:</p>
+                            <div class="btn-group btn-group-lg">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                            <hr>
+                            <p>Default Buttons:</p>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                            <hr>
+                            <p>Small Buttons:</p>
+                            <div class="btn-group btn-group-sm">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt;                               
+                                &lt;p&gt;Large Buttons:&lt;/p&gt; <br>
+                                &lt;div class=&quot;btn-group btn-group-lg&quot;&gt;<br>
+                                &lt;/div&gt;<br>
+                                &lt;p&gt;Default Buttons:&lt;/p&gt;<br>
+                                &lt;div class=&quot;btn-group&quot;&gt; <br>            
+                                &lt;/div&gt;<br>
+                                &lt;p&gt;Small Buttons:&lt;/p&gt;<br>
+                                &lt;div class=&quot;btn-group btn-group-sm&quot;&gt;<br>
+                                &lt;/div&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+
+                        <div>
+                            <h4>Grupos de botones verticales</h4>
+                            <p>Usa la clase <span
+                                    style="color: red; font-weight: bolder;">.btn-group-vertical</span>para crear un
+                                grupo de botones verticales:</p>
+                            <div class="btn-group-vertical">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div class=&quot;btn-group-vertical&quot;&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Samsung&lt;/button&gt;<br>
+                                &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Sony&lt;/button&gt;<br>
+                            &lt;/div&gt;
+                        </code>
+
+                        <div>
+                            <h4>Grupos de botones uno al lado del otro</h4>
+                            <p>Los grupos de botones están "en línea" de forma predeterminada, lo que hace que aparezcan uno al lado del otro cuando tiene varios grupos:</p>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <button type="button" class="btn btn-primary">Sony</button>
+                            </div>
+
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">BMW</button>
+                                <button type="button" class="btn btn-primary">Mercedes</button>
+                                <button type="button" class="btn btn-primary">Volvo</button>
+                            </div>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt;
+                                &lt;div class=&quot;btn-group&quot;&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Samsung&lt;/button&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Sony&lt;/button&gt;<br>
+                                &lt;/div&gt;<br><br>
+
+                                &lt;div class=&quot;btn-group&quot;&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;BMW&lt;/button&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Mercedes&lt;/button&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Volvo&lt;/button&gt;<br>
+                                &lt;/div&gt;
+                            &lt;/div&gt;
+                        </code>
+
+                        <div>
+                            <h4>Grupos de botones anidados y menús desplegables</h4>
+                            <p>Anide grupos de botones para crear menús desplegables</p>
+                            <div class="btn-group">
+                                <button type="button" class="btn btn-primary">Apple</button>
+                                <button type="button" class="btn btn-primary">Samsung</button>
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-primary dropdown-toggle"
+                                        data-bs-toggle="dropdown">Sony</button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#">Tablet</a>
+                                        <a class="dropdown-item" href="#">Smartphone</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <code>
+                            &lt;div&gt;
+                                &lt;div class=&quot;btn-group&quot;&gt; <br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Apple&lt;/button&gt;<br>
+                                    &lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Samsung&lt;/button&gt;<br>
+                                    &lt;div class=&quot;btn-group&quot;&gt;<br>
+                                        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary dropdown-toggle&quot;<br>
+                                            data-bs-toggle=&quot;dropdown&quot;&gt;Sony&lt;/button&gt;<br>
+                                        &lt;div class=&quot;dropdown-menu&quot;&gt;<br>
+                                            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Tablet&lt;/a&gt;<br>
+                                            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Smartphone&lt;/a&gt;<br>
+                                        &lt;/div&gt;
+                                    &lt;/div&gt;
+                                &lt;/div&gt;
+                        </code>
+                    </div>
                 </section>
             </div>
 
@@ -117,49 +438,63 @@
                     <!-- Iván Soto esta es tu area de trabajo -->
                     <h2>Badges</h2><br><br>
                     <div class="container">
-                        <p>
-                            Una badge o insignia o insignias son etiquetas (label) que en bootstrap funcionan con una clase
-                            badge" y una subclase, en este caso "badge-secondary"
-                        </p>
-                        <h3> UN TITULO <span class="badge bg-secondary"> una badge </span> </h3>
-                        <p>
-                            Las badges escalan hasta el tamaño del elemento padre. En el ejemplo tenemos
-                            3 titulos de distintos tamaños con el mismo badge que escalan a el mismo tamaño
-                            que el elemento titulo del que descienden.
-                        </p>
-                        <h5> SOY UN TITULO PEQUEÑO <span class="badge bg-secondary"> badge pequeño </span> </h5>
-                        <h3> SOY UN TITULO <span class="badge bg-secondary"> badge </span> </h3>
-                        <h1> SOY UN TITULO GRANDE <span class="badge bg-secondary"> badge grande </span> </h1>
-                        <p>
-                            Las badges pueden ir dentro de elementos como por ejemplo button.
-                        </p>
-                        <button class="btn btn-primary"> Botón <span class="badge bg-info"> Badge </span> </button>
-                        <p>
-                            Las badges pueden tambien tener tambien otra posición relativa al elemento que las contiene.
-                        </p>
-                        <button type="button" class="btn btn-primary position-relative">
-                            Inbox <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                                99+ </span>
-                        </button>
-                        <p>
-                            Bootstrap 5 cuenta con 8 subclases de badged en función del color.
-                        </p>
-            
-                        <span class="badge bg-primary"> Primary </span>
-                        <span class="badge bg-secondary"> Secondary </span>
-                        <span class="badge bg-success"> Success </span>
-                        <span class="badge bg-danger"> Danger </span>
-                        <span class="badge bg-warning"> Warning </span>
-                        <span class="badge bg-info"> Info </span>
-                        <span class="badge bg-light text-dark"> Light </span>
-                        <span class="badge bg-dark"> Dark </span>
-            
-                        <p>
-                            Por ultimo las badge pueden redondearse usando la clase rounded-pill y el texto puede cambiarse a
-                            negro usando la clase text-dark.
-                        </p>
-            
-                        <span class="badge rounded-pill bg-info text-dark"> Rounded </span>
+                                <p>
+                                    Una badge o insignia o insignias son etiquetas (label) que en bootstrap funcionan con una clase
+                                    badge" y una subclase, en este caso "badge-secondary"
+                                </p>
+                    
+                                <h3> UN TITULO <span class="badge bg-secondary"> una badge </span> </h3>
+                                <p>
+                                    Las badges escalan hasta el tamaño del elemento padre. En el ejemplo tenemos
+                                    3 titulos de distintos tamaños con el mismo badge que escalan a el mismo tamaño
+                                    que el elemento titulo del que descienden.
+                                </p>
+                    
+                                <h5> SOY UN TITULO PEQUEÑO <span class="badge bg-secondary"> badge pequeño </span> </h5>
+                                <h3> SOY UN TITULO <span class="badge bg-secondary"> badge </span> </h3>
+                                <h1> SOY UN TITULO GRANDE <span class="badge bg-secondary"> badge grande </span> </h1>
+
+                                <code>&lt;h1&gt; SOY UN TITULO GRANDE &lt;span class="badge bg-secondary"&gt; badge grande &lt;/span&gt; &lt;/h1&gt;</code> <br> <br>
+                    
+                                <p>
+                                    Las badges pueden ir dentro de elementos como por ejemplo button.
+                                </p>
+                    
+                                <button class="btn btn-primary"> Botón <span class="badge bg-info"> Badge </span> </button>
+                    
+                                <p>
+                                    Las badges pueden tambien tener tambien otra posición relativa al elemento que las contiene.
+                                </p>
+                    
+                                <button type="button" class="btn btn-primary position-relative">
+                                    Inbox <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                        99+ </span>
+                                </button> <br><br>
+
+                                <code> &lt;button type="button" class="btn btn-primary position-relative" &gt;<br>
+                                    Inbox &lt;span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"&gt;
+                                        99+ &lt;/span&gt; <br>
+                                &lt;/button&gt; </code> <br><br>
+                                <p>
+                                    Bootstrap 5 cuenta con 8 subclases de badged en función del color.
+                                </p>
+                    
+                                <span class="badge bg-primary"> Primary </span>
+                                <span class="badge bg-secondary"> Secondary </span>
+                                <span class="badge bg-success"> Success </span>
+                                <span class="badge bg-danger"> Danger </span>
+                                <span class="badge bg-warning"> Warning </span>
+                                <span class="badge bg-info"> Info </span>
+                                <span class="badge bg-light text-dark"> Light </span>
+                                <span class="badge bg-dark"> Dark </span>
+                                <br><br>
+                                <code> &lt;span class="badge bg-primary"&gt; Primary &lt;/span&gt; </code>
+                    
+                                <p>
+                                    Por ultimo las badge pueden redondearse usando la clase rounded-pill y el texto puede cambiarse a
+                                    negro usando la clase text-dark.
+                                </p>
+                                <span class="badge rounded-pill bg-info text-dark"> Rounded </span>
                     </div>
                 </section>
             </div>
