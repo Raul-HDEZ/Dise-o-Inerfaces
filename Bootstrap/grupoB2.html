@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
     <title>Bootstrap</title>
 </head>
 <body>
@@ -351,178 +352,205 @@
                 <section id="ej7">
                     <!-- Muriel esta es tu area de trabajo: formulario especifico-->
                     <h2>Formulario Específico</h2><br><br>
-                    <p>Este formulario es la puesta en práctica de todo lo aprendido. Con las ideas que han ido surgiendo de diferentes investigacines de cada apartado.</p><br>
-                    <p>La temática es una formulario de registro para una app social que admite pagos.</p><br>
-                    <div class="container mt-3">
-                        <h4>Formulario de Registro</h4>
-                        <form>
-                            <!-- Primeros datos  Arson*37 Arson-->
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="nickname">Alias:</label>
-                                        <!-- Elija un alias para su cuenta. Podrá cambiarlo en la configuración de la cuenta después de registrarse. -->
-                                        <input type="text" class="form-control" id="nickname" placeholder="Tu alias público" name="nickname">
-                                        <div class="invalid-feedback">Check this checkbox to continue.</div> 
-                                        <div class="valid-feedback"></div>                                 
-                                        <!-- Pierde el foco: /!\ Se requiere un alias  + borde rojo-->
-                                        <!-- Dato balido: borde azul con foco ->> pierde foco normal -->
-                                    </div>
-                                </div>
-                              </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="email">Email:</label>
-                                        <!-- Utilizará esta dirección de correo electrónico para iniciar sesión -->
-                                        <input type="email" class="form-control" id="email" placeholder="Tu email" name="email">
-                                        <!-- Pierde el foco: /!\ Se requiere un dirección de correo electronico + borde rojo-->
-                                    </div>
-                                </div>
+                    <p>Este formulario es la puesta en práctica de todo lo aprendido. Con las ideas que han ido surgiendo de diferentes investigaciones de cada apartado.</p>
+                    <p>Además de organizar el tamaño del formulario, por ahora estático, e introducir dos select y un radio.</p>
+                    <p>Se ha conseguido que al pulsar el botón Enviar (JavaScript) se cambie la clase Bootstrap del form a
+                        "was-validated". Esto hará la llamada a las librerías de Bootstrap y se comprobará que estén todos los campos rellenos y salgan en verde los que están bien y en rojo más un mensaje debajo los que están mal. ref: <a href="https://getbootstrap.com/docs/5.0/forms/validation/">etbootstrap.com forms validation</a></p>
+                    <p> Además se ha añadido un icino de Bootstrap.Para esto, en la cabecera 
+                        
+                    <code>'&lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"&gt;' más el icono deseado de alerta
+                    &lt;i class="bi bi-exclamation-triangle"&gt;&lt;/i&gt; </code> </p>
+                    <p>Tambien se ha añaido un evento para lanzar un spiner de Bootstrap cuando se rellena el campo "Alias" simulando que se chequea con la BBDD si esta disponible.</p>
+                    <p>Se ha integrado una barra de progreso de Bootstrap con JavaScript para simular el progreso al rellenar campos en el formulario.</p>
+                    
+                    <p>La temática es un formulario de registro para una app social que admite pagos.</p><br>
+                    <div class="container">
+                        <!-- <h4>Formulario de Registro</h4> -->
+                        <div class="container mt-3">                            
+                            <div class="progress">
+                              <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:0%" id="barra"></div>
                             </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="mb-3 mt-3 row">
-                                        <div class="col-4">
-                                            <label for="password">Contraseña:</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Tu contraseña" name="password1">
-                                            <!-- Pierde el foco: /!\ Se requiere una contraseña + borde rojo-->
-                                        </div>
-                                        <div class="col-4">
-                                            <label for="password">Confirma la contraseña:</label>
-                                            <input type="password" class="form-control" id="password" placeholder="Tu contraseña" name="password2">
-                                            <!-- Pierde el foco y pswd1 esta correcto: /!\ Debe confirmar la contraseña + borde rojo-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Fin Primeros datos -->
-                            <!-- Datos Personales Privados -->
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-8">
-                                        <label for="nombreCompleto">Nombre completo:</label>
-                                        <input type="text" class="form-control" id="nombreCompleto" placeholder="Tu nombre completo privado" name="nombreCompleto">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ Se requiere un nombre completo. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="tlf">Número de teléfono:</label>
-                                        <input type="tel" class="form-control" id="tlf" placeholder="Tu teléfono será pirvado" name="tlf">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ El número de teléfono es obligatorio. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="direccion">Dirección:</label>
-                                        <input type="text" class="form-control" id="direccion" placeholder="Tu dirección será pirvada" name="direccion"><br>
-                                        <input type="text" class="form-control" id="direccion2" placeholder="Apartamento, edificio, planta" name="direccion2">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ Se requiere una dirección. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="ciudad">Ciudad:</label>
-                                        <input type="text" class="form-control" id="ciudad" placeholder="Tu ciudad" name="ciudad">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ Se requiere una ciudad. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="provincia">Provincia:</label>
-                                        <input type="text" class="form-control" id="provincia" placeholder="Tu provincia" name="provincia">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ Se requiere una provincia. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="codpost">Código postal:</label>
-                                        <input type="text" class="form-control" id="codpost" placeholder="Tu código postal" name="codpost">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ El código postal es obligatorio. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="checkbox">
-                                <label><input type="checkbox" value="tercon">He leído y acepto los términos y condiciones.</label>
-                            </div>
-                            <!-- Fin Datos Personales -->
-                            <!-- Información de Facturación -->
-                            <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-4">
-                                        <label for="tarjeta">Número de tarjeta de crédito o débito:</label>
-                                        <input type="text" class="form-control" id="tarjeta" placeholder="" name="tarjeta">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ El número de tarjeta de crédito es obligatorio. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div>
-                              <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="mb-3 mt-3 row">
-                                        <div class="col-2">
-                                            <label for="sel1" class="form-label">Fecha de vencimiento:</label>
-                                            <select class="form-select" id="mes" name="mes">
-                                                <option>Enero</option>
-                                                <option>Febrero</option>
-                                                <option>Marzo</option>
-                                                <option>Abril</option>
-                                                <option>Mayo</option>
-                                                <option>Junio</option>
-                                                <option>Julio</option>
-                                                <option>Agosto</option>
-                                                <option>Septiembre</option>
-                                                <option>Octubre</option>
-                                                <option>Noviembre</option>
-                                                <option>Diciembre</option>
-                                            </select>
-                                        </div>
-                                        <div class="col-2">
-                                            <label for="sel1" class="form-label">&nbsp; </label>
-                                            <select class="form-select" id="anio" name="anio">
-                                                <option>2022</option>
-                                                <option>2023</option>
-                                                <option>2024</option>
-                                                <option>2025</option>
-                                                <option>2026</option>
-                                                <option>2027</option>
-                                                <option>2028</option>
-                                                <option>2029</option>
-                                                <option>2030</option>
-                                                <option>2031</option>
-                                                <option>2032</option>
-                                                <option>2033</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                              <div class="mb-3 mt-3">
-                                <div class="container-fluid">
-                                    <div class="col-xs-4">
-                                        <label for="nombreTarjeta">Nombre del titular de la tarjeta:</label>
-                                        <input type="text" class="form-control" id="nombreTarjeta" placeholder="" name="nombreTarjeta">
-                                        <!-- Pierde el foco y pswd1 esta correcto: /!\ El número de tarjeta de crédito es obligatorio. + borde rojo-->
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Se prodría añadir direccion de facturación con radio "Utilizar mi dirección de contacto" || "Utilizar una nueva dirección" -->
+                          </div>
+                        <form id="formulario" class="row g-3 needs-validation" novalidate>
+                            <!-- Primeros datos -->
+                            <h4>Primeros datos</h4>
                             <div class="container-fluid">
                                 <div class="col-4">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <label for="alias" class="form-label">Alias:</label>
+                                    <input type="text" class="form-control" id="alias" placeholder="Tu alias público" name="alias" required><div id="spinner" class="spinner-border text-primary spinner-border-sm"></div>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere un alias <i class="bi bi-exclamation-triangle"></i></div>
                                 </div>
                             </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="email" class="form-label">Email:</label>
+                                    <input type="text" class="form-control" id="email" placeholder="Tu email público" name="email" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere un dirección de correo electronico <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
+                                <div class="col-4">
+                                    <label for="contraseña" class="form-label">Contraseña:</label>
+                                    <input type="text" class="form-control" id="contraseña" placeholder="Tu contraseña" name="contraseña" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere una contraseña <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            
+                                <div class="col-4">
+                                    <label for="contraseña2" class="form-label">Confirma la contraseña:</label>
+                                    <input type="text" class="form-control" id="contraseña2" placeholder="Confirma tu contraseña" name="contraseña2" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Debe confirmar la contraseña <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <!-- Fin Primeros datos -->
+                            <!-- Datos Personales Privados -->
+                            <h4 class="mt-5">Datos Personales</h4>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="nombreCompleto" class="form-label">Nombre completo:</label>
+                                    <input type="text" class="form-control" id="nombreCompleto" placeholder="Tu nombre completo privado" name="nombreCompleto" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere un nombre completo. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="telefono" class="form-label">Número de teléfono:</label>
+                                    <input type="text" class="form-control" id="telefono" placeholder="Tu teléfono será pirvado" name="telefono" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> El número de teléfono es obligatorio. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="direccion" class="form-label">Dirección:</label>
+                                    <input type="text" class="form-control" id="direccion" placeholder="Tu dirección será pirvada" name="direccion" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere una dirección. <i class="bi bi-exclamation-triangle"></i></div>
+                                    <input type="text" class="mt-1 form-control" id="direccion2" placeholder="Apartamento, edificio, planta" name="direccion2">
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="ciudad" class="form-label">Ciudad:</label>
+                                    <input type="text" class="form-control" id="ciudad" placeholder="Tu ciudad" name="ciudad" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere una ciudad. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="provincia" class="form-label">Provincia:</label>
+                                    <input type="text" class="form-control" id="provincia" placeholder="Tu provincia" name="provincia" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> Se requiere una provincia. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="codpost" class="form-label">Código postal:</label>
+                                    <input type="text" class="form-control" id="codpost" placeholder="Tu código postal" name="codpost" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> El código postal es obligatorio. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="container mt-4">
+                                <div class="col-5">
+                                    <div class="alert alert-info">
+                                        <strong>Info!</strong> Por favor lee el  <a href="#" class="alert-link"> documento de términos y condiciones</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-0 col-12">
+                                <div class="form-check">
+                                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                  <label class="form-check-label" for="invalidCheck">
+                                    He leído y acepto los términos y condiciones.
+                                  </label>
+                                  <div class="invalid-feedback">
+                                    <i class="bi bi-exclamation-triangle"></i> Es necesario aceptar los términos y condiciones <i class="bi bi-exclamation-triangle"></i>
+                                  </div>
+                                </div>
+                              </div>
+
+                            <!-- Fin Datos Personales -->
+                            <!-- Información de Facturación -->
+                            <h4 class="mt-5">Datos de Facturación</h4>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="tarjeta" class="form-label">Número de tarjeta de crédito o débito::</label>
+                                    <input type="text" class="form-control" id="tarjeta" placeholder="" name="tarjeta" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> El número de tarjeta de crédito es obligatorio. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-3 form-group row">
+                                <label for="sel1">Fecha de vencimiento:</label>
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="mes" placeholder="Mes">
+                                        <option>Enero</option>
+                                        <option>Febrero</option>
+                                        <option>Marzo</option>
+                                        <option>Abril</option>
+                                        <option>Mayo</option>
+                                        <option>Junio</option>
+                                        <option>Julio</option>
+                                        <option>Agosto</option>
+                                        <option>Septiembre</option>
+                                        <option>Octubre</option>
+                                        <option>Noviembre</option>
+                                        <option>Diciembre</option>
+                                    </select>
+                                </div>
+                                <div class="col-sm-2">
+                                    <select class="form-control" id="anio" placeholder="Año">
+                                        <option>2022</option>
+                                        <option>2023</option>
+                                        <option>2024</option>
+                                        <option>2025</option>
+                                        <option>2026</option>
+                                        <option>2027</option>
+                                        <option>2028</option>
+                                        <option>2029</option>
+                                        <option>2030</option>
+                                        <option>2031</option>
+                                        <option>2032</option>
+                                        <option>2033</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <label for="nombreTarjeta" class="form-label">Nombre del titular de la tarjeta:</label>
+                                    <input type="text" class="form-control" id="nombreTarjeta" placeholder="" name="nombreTarjeta" required>
+                                    <div class="valid-feedback"></div>
+                                    <div class="invalid-feedback"><i class="bi bi-exclamation-triangle"></i> El nombre de la tarjeta de crédito es obligatoria. <i class="bi bi-exclamation-triangle"></i></div>
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button class="btn btn-primary" type="submit">Enviar</button>
+                            </div>
+
                         </form>
+
                     </div>
                 </section>
             </div>
@@ -550,5 +578,71 @@
           </div>
     </footer>
     <script src="./JS/scripts.js"></script>
+    <script>
+        /*//Obtengo el formulario en variable
+        var form = document.getElementById("formulario");
+    
+        //Activo un evento cuando un elemeto de formulario pierde el foco
+        form.addEventListener('submit', function( event ) {
+          //event.target.value esta instruccion lee el valor del input que pierde el foco
+          //Checkeo si se deja vacio o no
+          form.classList.add('was-validated');
+        }, false);*/
+    
+      </script>
+    <script>
+       // Example starter JavaScript for disabling form submissions if there are invalid fields
+(function () {
+  'use strict'
+
+  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+  var forms = document.querySelectorAll('.needs-validation')
+
+  // Loop over them and prevent submission
+  Array.prototype.slice.call(forms)
+    .forEach(function (form) {
+      form.addEventListener('submit', function (event) {
+        if (!form.checkValidity()) {
+          event.preventDefault()
+          event.stopPropagation()
+        }
+
+        form.classList.add('was-validated')
+      }, false)
+    })
+})()
+      </script>
+      <script>
+          var cont = 0;
+          var form = document.getElementById('formulario');
+          var barra = document.getElementById('barra');
+          const max = 12;
+          //var filledInputs = $(':input').filter(function() {return !!this.value;}).length;
+          form.addEventListener('blur', function( event ) {
+            if(event.target.value != ""){
+                cont++;
+                if(cont >= max){cont = max;}
+            }else{
+                cont--;
+                if(cont <= 0){cont = 0;}
+            }
+            let procentaje = cont/ max * 100;
+
+            barra.style.width = procentaje + '%';
+            }, true);
+
+
+      </script>
+        <script>
+            var spinner = document.getElementById('spinner');
+            var alias = document.getElementById('alias');
+            spinner.style.display = "none";
+            alias.addEventListener("blur", function( event ) {
+                if(event.target.value != ""){
+                spinner.style.display = "block";
+                setTimeout(function(){spinner.style.display = "none";}, 1000);
+            }
+            }, true);
+        </script>
 </body>
 </html>
